@@ -14,7 +14,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:text="Calculate Me"
         android:textSize="30sp"
         android:textStyle="bold"
@@ -24,8 +24,8 @@
         android:id="@+id/num1"
         android:hint="Enter First Number"
         android:inputType="number"
-        android:textColor="@color/white"
-        android:layout_marginTop="45sp"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="20dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
@@ -33,9 +33,9 @@
         android:id="@+id/num2"
         android:inputType="number"
         android:layout_width="match_parent"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30sp"
+        android:layout_marginTop="10dp"
         android:hint="Enter Second Number" />
 
     <LinearLayout
@@ -47,75 +47,76 @@
 
         <Button
             android:id="@+id/btnAdd"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:backgroundTint="#CD5C5C"
             android:textStyle="bold"
-            android:text="+" />
+            android:text="+"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp" />
 
         <Button
             android:id="@+id/btnSub"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:backgroundTint="#CD5C5C"
             android:textStyle="bold"
-            android:text="-" />
+            android:text="-"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp" />
 
         <Button
             android:id="@+id/btnMultiply"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:backgroundTint="#CD5C5C"
             android:textStyle="bold"
-            android:text="*" />
+            android:text="*"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp" />
 
         <Button
             android:id="@+id/btnDivide"
-            android:layout_width="wrap_content"
+            android:layout_width="0dp"
+            android:layout_weight="1"
             android:layout_height="wrap_content"
             android:textSize="25sp"
-            android:textColor="@color/white"
+            android:textColor="@android:color/white"
             android:backgroundTint="#CD5C5C"
             android:textStyle="bold"
-            android:text="/" />
+            android:text="/"
+            android:layout_marginEnd="5dp"
+            android:layout_marginStart="5dp" />
     </LinearLayout>
 
     <TextView
         android:id="@+id/result"
-        android:textColor="@color/white"
+        android:textColor="@android:color/white"
         android:layout_gravity="center"
         android:textStyle="bold"
         android:textSize="30sp"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp" />
+        android:layout_marginTop="20dp" />
 
-    <androidx.constraintlayout.widget.ConstraintLayout
-        android:layout_width="wrap_content"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:layout_gravity="center">
-
-        <Button
-            android:id="@+id/btnExit"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:backgroundTint="#CD5C5C"
-            android:text="Exit"
-            android:textColor="@color/white"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
-
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    <Button
+        android:id="@+id/btnExit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#CD5C5C"
+        android:text="Exit"
+        android:textColor="@android:color/white"
+        android:textSize="25sp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp" />
 
 </LinearLayout>
